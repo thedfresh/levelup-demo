@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>LevelUp Restaurant Finder</h1>
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4><label>Find a Restaurant</label></h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="vm.nameFilter" ng-change="vm.merchantFilter()">
+                        </div>
+                        <!-- <h4><label>Restaurant Type</label></h4> -->
+                        <!-- <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="all" ng-model="vm.search.all" ng-change="vm.typeFilter()">
+                            <label class="form-check-label" for="all">All</label>
+                        </div> -->
+                        <!-- <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="delivery" ng-model="vm.search.delivery" ng-change="vm.typeFilter()">
+                            <label class="form-check-label" for="delivery">Delivery</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="in_store" ng-model="vm.search.instore" ng-change="vm.typeFilter()">
+                            <label class="form-check-label" for="in_store">In-store</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="pickup" ng-model="vm.search.pickup" ng-change="vm.typeFilter()">
+                            <label class="form-check-label" for="pickup">Pickup</label>
+                        </div> -->
+                    </div>
+                    <!-- <div class="col-lg-6">
+                        <div class="form-group">
+                            <h4><label for="categories">Available Categories</label></h4>
+                            <select multiple class="form-control" id="categories" ng-model="vm.search.categories" ng-options="category as category for category in vm.categories | orderBy" ng-change="vm.merchantFilter()"></select>
+                        </div>
+                    </div> -->
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- <pre>{{vm.filteredLocations | json}}</pre> -->
+</div>
